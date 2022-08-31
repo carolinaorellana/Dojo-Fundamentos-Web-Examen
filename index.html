@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carolina Orellana">
+    <!--Link google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Noto+Serif+Balinese&family=Roboto+Slab:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!--Link Css-->
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <title>We Collect</title>
+</head>
+<body>
+    <header>
+        <div id="logoMarca">
+            <img src="./assets/img/icon1.png" alt="icono de compuador">
+            <h1>We collect your it</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Book a collection</a></li>
+                <li class="sinBorde"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="infoHero">
+            <h2>Helping others with your computer</h2>
+            <p>A computer is a vital tool for anyone living in this day and age. This is why we aim to donate every 1 in 10 compuers we collect to charitabe and worthy causes.</p>
+            <button onclick="leerMas(this)">LearnMore»</button>
+        </div>
+        <div class="imgHero">
+            <img src="./assets/img/main_img.png" alt="Fotografía de un niño con computador">
+        </div>
+    </main>
+    <hr class="estiloHr">
+    <div id="contenedorPrincipal">
+        <section>
+            <div class="cardsPeques">
+                <div class="cardPequena bordeCard">
+                    <div class="titularCard">
+                        <img src="./assets/img/icon2.png" alt="Icono tuerca">
+                        <h3>Safe & Secure</h3>
+                    </div>
+                    <p>We ensure all previously stored information on any of the systems we collect is either removed, given to you or destroyed.</p>
+                </div>
+                <div class="cardPequena bordeCard">
+                    <div class="titularCard">
+                        <img src="./assets/img/icon3.png" alt="Icono planeta tierra">
+                    <h3>Eco-friendly</h3>
+                    </div>
+                    <p>We aim to reuse all that we collet from you. Reducing wastage and the manufacture of new systems has a range of benefit for our futures on this planet.</p>
+                </div>
+                <div class="cardPequena">
+                    <div class="titularCard">
+                        <img src="./assets/img/icon4.png" alt="Icono planeta tierra">
+                        <h3>Helping others</h3>
+                    </div>
+                    <p>We donate 1 in 10 the machines to charities and worthy causes.This helps grow individuals who are in need of the benefits a computer can bring.</p>
+                </div>
+            </div>
+            <div class="cardGrande">
+                <h3>Welcome to We Collect your IT</h3>
+                <p>We offer a free collection service across the UK for the removal of your old IT systems. We safely reuse
+                    this equipment by ensuring any sensitive or personal information that was on these machine is either
+                    physically removed or destroyec before we reuse them. Using us shall not only benefit the environment by
+                    avoiding the waste and disposal of this equipment but shall also help others, as we donate and
+                    proportion of all the equipment we collect.</p>
+            </div>
+        </section>
+        <aside onclick="cambiarColor(this)">
+            <div class="infoAside" >
+                <h3>Why waste? We will collect....</h3>
+                <p>The environmental and social benefits os reuse do not only help conserve natural resources, but help reduce
+                    air
+                    and water pollution caused by hazardous disposal. Reuse reduces the amount of greenhouse gas emissions
+                    caused by
+                    the manufacturing of new products. It simply makes good sense to let ux collet and reuse your equipment.</p>
+                <a href="#">Read more »</a>
+            </div>
+            <img src="./assets/img/recycle.png" alt="Imagen de reciclaje">
+        </aside>
+    </div>
+    <footer>
+        <div id="contacto">
+            <h4>Contact us</h4>
+            <p>
+                We Collet Your IT <br>
+                Leading Computers Ltd <br>
+                27 Vesta Avenue <br>
+                St Albans, Hertfordshire
+            </p>
+            <h5> info@we-collect-your-it.co.uk</h5>
+        </div>
+        <div id="soporte">
+            <h4>Support and Help</h4>
+            <div class="footerLinks">
+                <h5><a href="#">About us</a></h5>
+                <h5><a href="#">How we work</a></h5>
+                <h5><a href="#">Helping others</a></h5>
+                <h5><a href="#">Book a collection</a></h5>
+                <h5><a href="#">Contanct us</a></h5>
+            </div>
+        </div>
+        <div id="formulario">
+            <h4>Wants us to get in touch with you</h4>
+            <p>Leave us your name, number and e-mail addres and someone will get in touch.</p>
+            <form>
+                <div class="inputFooter">
+                        <input class="nombre" type="text" placeholder="Name">
+                        <input class="correo" type="email" placeholder=" Email">
+                    <input class="telefono" type="tel" placeholder="Phone">
+                </div>
+                <input id="button" type="submit" value="Submit" onclick="enviarFormulario()"> 
+            </form>
+        </div>
+    </footer>
+    <div class="copyrights">
+        <h6> We Collect Your IT is a project set up by Leading Computers Ltd. Copyright © 2011 All rights reserved.</h6>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
